@@ -1,10 +1,14 @@
 # Trello board to web page
 
-This is a simple Jekyll site for generating readable web-page versions of the Trello boards' content.
+This is a simple Jekyll site for generating readable web-page versions of Trello board content. For instance, if you want all the content from a given board on a single page for sharing or printing to PDF.
 
-Your Trello board may contain sensitive information. For that reason, we recommend never publishing this repo's site output anywhere, especially GitHub Pages. To keep your data confidential, never fork this repo, and never make copies of it.
+Currently, it only displays card names, the lists each cards is on, and the card description. It includes a filter for showing only the cards that contain a certain phrase or list name.
 
-The `_data` folder contains the actual data you export from Trello, so it is not tracked in version control. Never commit anything in the `_data` or `_site` folders to version control. They are already ignored by Git (in `.gitignore`).
+## Warning
+
+Your Trello boards may contain sensitive information. For that reason, we recommend never publishing this repo's site output anywhere, including on GitHub Pages.
+
+The `_data` folder contains the actual data you export from Trello, so it is not tracked in version control. To avoid accidentally sharing sensitive data from your Trello boards, never commit anything in the `_data` or `_site` folders to version control. They are already ignored by Git (in `.gitignore`).
 
 ## Usage
 
