@@ -1,0 +1,14 @@
+title: Trello-to-Web
+baseurl: ""
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - README.md
+
+defaults: 
+  -
+    scope: # Sets default page frontmatter for all files in this project (an empty string "" for path means all files).
+      path: ""
+    values:
+      layout: "default"

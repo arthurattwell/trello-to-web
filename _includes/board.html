@@ -1,0 +1,36 @@
+{% comment %} Use default.json unless
+another board data file is specified. {% endcomment %}
+{% assign board-name = "default" %}
+{% if include.board and include.board != "" %}
+    {% assign board-name = include.board %}
+{% endif %}
+
+{% for board in site.data %}
+    {% if board[0] == board-name %}
+        {% assign board-data = board[1] %}
+    {% endif %}
+{% endfor %}
+
+{% comment %} Generate the cards content. {% endcomment %}
+<div class="cards">
+
+{% for card in board-data.cards %}
+
+    {% comment %} Get the name of the list by its id. {% endcomment %}
+    {% for list in board-data.lists %}
+        {% if list.id == card.idList %}
+            {% capture list %}{{ list.name }}{% endcapture %}
+        {% endif %}
+    {% endfor %}
+
+<div class="card">
+
+        <div class="card-list">{{ list }}</div>
+        <h2 class="card-name">{{ card.name}}</h2>
+        <div class="card-description">{{ card.desc | markdownify }}</div>
+
+</div>
+
+{% endfor %}
+
+</div>

@@ -1,0 +1,17 @@
+---
+---
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ site.title }}</title>
+    <link rel="stylesheet" type="text/css" href="https://arthurattwell.github.io/halfdecent/halfdecent.css">
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/styles.css">
+    <script src="{{ site.baseurl }}/assets/js/filter.js"></script>
+    <script src="{{ site.baseurl }}/assets/js/filter-options.js"></script>
+</head>
+<body>
+{% include filter.html %}
+
+{{ content }}
+</body>
+</html>
