@@ -2,7 +2,7 @@
 
 This is a simple Jekyll site for generating readable web-page versions of Trello board content. For instance, if you want all the content from a given board on a single page for sharing or printing to PDF.
 
-Currently, it only displays card names, the lists each cards is on, and the card description. It includes a filter for showing only the cards that contain a certain phrase or list name.
+Currently, it only displays each card's name, the list it's on, and the card description. The web page includes a filter for showing only the cards that contain a certain phrase or list name.
 
 ## Warning
 
