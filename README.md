@@ -12,13 +12,17 @@ The `_data` folder contains the actual data you export from Trello, so it is not
 
 ## Usage
 
-1. To update the data, go to your Trello board's settings and export as JSON. Save the exported file to `_data` as `default.json`.
-1. To build the site, in the root directory run `bundle exec jekyll serve`.
+You need to have [Jekyll installed](https://jekyllrb.com/docs/installation/) first.
+
+1. Clone or copy this repo.
+1. Go to your Trello board's settings and export as JSON. Save the exported file to the `_data` folder here as `default.json`.
+1. In a terminal in the root directory of this repo, run `bundle exec jekyll serve`.
+1. In your web browser, go to `localhost:4000`.
 
 You can use this repo for more than one, default board. For example, to show the data from a board you call `bananas`:
 
 1. Export the board from Trello as JSON and save the file to `_data` as `bananas.json`.
-1. Create a new markdown file with page frontmatter (i.e. two rows of `---` at the top) called `bananas.md`, and include this tag in its content:
+1. In the root of this repo, create a new markdown file with page frontmatter (i.e. two rows of `---` at the top) called `bananas.md`, and include this tag in its content:
 
    ```
    {% include board.html board="bananas" %}
