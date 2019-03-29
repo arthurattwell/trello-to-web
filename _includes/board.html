@@ -23,7 +23,7 @@ another board data file is specified. {% endcomment %}
         {% endif %}
     {% endfor %}
 
-<div class="card">
+<div class="card{% if card.closed == true %} closed{% endif %}">
 
         <div class="card-list">{{ list }}</div>
         <h2 class="card-name">{{ card.name}}</h2>
